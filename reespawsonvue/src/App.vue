@@ -2,16 +2,29 @@
   <div id="app">
     <img src="./assets/logo.png">
     <HelloWorld/>
+    <Header/>
+    <Passions/>
+    <About/>
+    <Projects/>
+    <Contact/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Header from './components/Header.vue'
+import Passions from './components/Passions.vue'
+import About from './components/About.vue'
+import Projects from './components/Projects.vue'
+import Contact from './components/Contact.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Passions,
+    About,
+    Projects,
+    Contact
   }
 }
 </script>
