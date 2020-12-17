@@ -1,5 +1,17 @@
 .features-tiles-item-image {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
 	display: inline-flex;
-	border-radius: 50%;
-	background: radial-gradient(circle at bottom, get-color(primary, 1) 0%, darken(get-color(secondary, 2), 5%) 50%, get-color(quaternary, 1) 100%);
+	justify-content: space-around;
+
+
+	// border-radius: 50%;
+	// background: radial-gradient(circle at bottom, get-color(primary, 1) 0%, darken(get-color(secondary, 2), 5%) 50%, get-color(quaternary, 1) 100%);
+}
+
+.features-tiles-item-header {
+	display: flex;
+	justify-content: center;
+	border: 1px solid white;
 }

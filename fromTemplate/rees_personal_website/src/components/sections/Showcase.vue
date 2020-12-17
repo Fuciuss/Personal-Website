@@ -53,18 +53,34 @@
                             <h3 class="mt-0 mb-12">
                                 iGiveThanks
                             </h3>
-                            <p class="m-0">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
+                            <!-- <p class="m-0">
+                                Minimum Viable Product Web Application developed as part of the 2020 NextGen Startup Weekend
+                            </p> -->
+                            <ul>
+                                <li>
+                                    Available at: <a href="http://www.igivethanks.co" target="_blank">www.igivethanks.co</a>
+                                    </li>
+                                <li>
+                                    Vue Application with Google Firebase backend
+                                </li>
+                                <li>
+                                    Developed as part of the 2020 NextGen Startup Weekend
+                                </li>
+                                <li>
+                                    Overall weekend finalist
+                                </li>
+
+                            </ul>
+                            
                         </div>
                         <div
-                            class="split-item-image reveal-from-right" data-reveal-container=".split-item"
+                            class="split-item-give-thanks reveal-from-right center-content" data-reveal-container=".split-item"
                             :class="imageFill && 'split-item-image-fill'">
                             <c-image
                                 :src="require('@/assets/images/igivethanks.png')"
                                 alt="Features split image 02"
-                                :width="528"
-                                :height="396" />
+                                :width="400"
+                                :height="700" />
                         </div>
                     </div>
 
@@ -90,7 +106,7 @@ export default {
     return {
       sectionHeader: {
         title: 'Recent Projects',
-        paragraph: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.'
+        paragraph: 'A couple of recent projects..'
       }
     }
   }

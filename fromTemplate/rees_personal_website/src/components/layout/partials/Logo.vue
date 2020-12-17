@@ -3,7 +3,7 @@
         <h1 class="m-0">
             <router-link to="/">
                 <c-image
-                    :src="require('@/assets/images/logo.svg')"
+                    :src="require('@/assets/images/RP_logo_white.svg')"
                     alt="Neon"
                     :width="32"
                     :height="32" />
