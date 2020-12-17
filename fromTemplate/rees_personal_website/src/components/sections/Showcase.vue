@@ -41,7 +41,7 @@
                             class="split-item-image reveal-from-left" data-reveal-container=".split-item"
                             :class="imageFill && 'split-item-image-fill'">
                             <c-image
-                                :src="require('@/assets/images/features-split-image-01.svg')"
+                                :src="require('@/assets/videos/BOTGAR_Trim.webm')"
                                 alt="Features split image 01"
                                 :width="528"
                                 :height="396" />
@@ -67,7 +67,7 @@
                                     Developed as part of the 2020 NextGen Startup Weekend
                                 </li>
                                 <li>
-                                    Overall weekend finalist
+                                    <a href="https://twitter.com/OQCE_/status/1239117083146764289?s=20" target="_blank">Overall weekend finalist</a>
                                 </li>
 
                             </ul>
@@ -84,6 +84,31 @@
                         </div>
                     </div>
 
+
+                    <div class="split-item">
+                        <div class="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
+                            <h3 class="mt-0 mb-12">
+                                Music Notes
+                            </h3>
+                            <p class="m-0">
+                            </p>
+                            <ul>
+
+                                <li>
+                                    <svg fill="none" height="16" stroke="currentColor" stroke-linecap="square" stroke-linejoin="arcs" stroke-width="1" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h13M12 5l7 7-7 7"></path></svg>
+                                    Developed in Unity</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="split-item-image reveal-from-left" data-reveal-container=".split-item"
+                            :class="imageFill && 'split-item-image-fill'">
+                            <c-image
+                                :src="require('@/assets/images/features-split-image-01.svg')"
+                                alt="Features split image 01"
+                                :width="528"
+                                :height="396" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

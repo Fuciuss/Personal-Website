@@ -21,7 +21,7 @@
                 Let's Get In Touch!
           </h2>
           <p class='center-content'>
-            Brisbane based vagabond,
+            Brisbane based,
             <br>
             Let's link up
           </p>

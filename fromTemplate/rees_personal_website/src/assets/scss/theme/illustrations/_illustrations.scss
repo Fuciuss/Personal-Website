@@ -15,10 +15,13 @@
 }
 
 // Hero illustration 01
-.illustration-section-01::after {
-	@include illustration('illustration-section-01.svg', 100%, 612px, top);
-}
+// .illustration-section-01::after {
+// 	@include illustration('illustration-section-01.svg', 100%, 612px, top);
+// }
 
+.illustration-section-01::after {
+	@include illustration('just_wave.png', 100%, 612px, top);
+}
 // Hero illustration 02
 .illustration-section-02::after {
 	@include illustration('illustration-section-02.svg', 100%, 612px, top);

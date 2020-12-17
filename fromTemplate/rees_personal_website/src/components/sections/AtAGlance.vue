@@ -21,7 +21,7 @@
           <div class="tiles-item reveal-from-right">
             <div class="tiles-item-inner">
               <div class="features-tiles-item-header">
-                <div class="features-tiles-item-image mb-16" style= "border: 1px solid red;">
+                <div class="features-tiles-item-image mb-16">
                   <c-image
                     :src="require('@/assets/images/icons/html_icon.svg')"
                     alt="html5"
@@ -68,20 +68,27 @@
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
                   <c-image
-                    :src="require('@/assets/images/feature-tile-icon-02.svg')"
-                    alt="Feature tile icon 02"
+                    :src="require('@/assets/images/icons/pytorch_icon.svg')"
+                    alt="Pytorch"
                     :width="72"
                     :height="72"
                   />
+                  <c-image
+                    :src="require('@/assets/images/icons/tensorflow_icon.svg')"
+                    alt="Tensorflow"
+                    :width="72"
+                    :height="72"
+                  />
+                  <!-- <c-image
+                    :src="require('@/assets/images/icons/.svg')"
+                    alt="Feature tile icon 02"
+                    :width="72"
+                    :height="72"
+                  /> -->
                 </div>
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">Artificial Intelligence</h4>
-                <p class="m-0 text-sm">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat.
-                </p>
               </div>
             </div>
           </div>
@@ -122,7 +129,7 @@
                 </div>
               </div>
               <div class="features-tiles-item-content">
-                <h4 class="mt-0 mb-8">Generate Leads</h4>
+                <h4 class="mt-0 mb-8">Me</h4>
                 <p class="m-0 text-sm">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatur. Excepteur sint
@@ -177,7 +184,7 @@ export default {
       sectionHeader: {
         title: "At a Glance",
         paragraph:
-          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.",
+          "",
       },
     };
   },
