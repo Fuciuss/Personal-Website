@@ -1,8 +1,10 @@
 <template>
   <fragment>
+
     <c-profile class="illustration-section-01" />
 
     <!-- <c-profile /> -->
+
 
     <c-at-a-glance top-divider class = "center-content" />
 
@@ -14,6 +16,8 @@
 
 
 <script>
+
+
 import CLayout from '@/layouts/LayoutDefault.vue'
 
 

@@ -20,7 +20,7 @@
 // }
 
 .illustration-section-01::after {
-	@include illustration('just_wave.png', 120%, 612px, top);
+	@include illustration('just_wave_optimized@2x.png', 120%, 612px, top);
 }
 // Hero illustration 02
 .illustration-section-02::after {

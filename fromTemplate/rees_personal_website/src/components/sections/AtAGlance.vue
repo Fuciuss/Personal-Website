@@ -53,12 +53,19 @@
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">Web Development</h4>
-                <p class="m-0 text-sm">
+                <i-arrow-down v-on:click.native="readMoreWebDev = !readMoreWebDev"/>
+
+                <p class="m-0 text-sm" v-if="readMoreWebDev" >
+                  Web development is an excellent way to give ideas and problem solutions a face.
+                  It may not be pretty, but god dammit it gets the job done.
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat.Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatur. Excepteur sint
                   occaecat cupidatat.
                 </p>
               </div>
+
             </div>
           </div>
 
@@ -83,17 +90,11 @@
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">Artificial Intelligence</h4>
                 <p class="m-0 text-sm" v-if="readMore">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat.
+                  This is where I will be writing a bunch of nonsense about artificial intelligence
                 </p>
-                <p class v-if="!readMore">
-                </p>
+
               </div>
-              <!-- <i-arrow-down  @click="readMore =! readMore" href="#"></i-arrow-down> -->
-              <p @click="activateReadMore">click me</p>
-              <!-- <i-arrow-down  @click="activateReadMore" href="#"></i-arrow-down> -->
-                <i-arrow-down />
+                <i-arrow-down v-on:click.native="readMore = !readMore"/>
               
             </div>
           </div>
@@ -111,8 +112,8 @@
                 </div>
               </div>
               <div class="features-tiles-item-content">
-                <h4 class="mt-0 mb-8">Music</h4>
-                <p class="m-0 text-sm">
+                <h4 class="mt-0 mb-8">Entrepreneurship</h4>
+                <p class="m-0 text-sm" v-if="readMore">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatur. Excepteur sint
                   occaecat cupidatat.
@@ -126,7 +127,7 @@
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
                   <c-image
-                    :src="require('@/assets/images/feature-tile-icon-04.svg')"
+                    :src="require('@/assets/images/icons/mandala_icon.svg')"
                     alt="Feature tile icon 04"
                     :width="72"
                     :height="72"
@@ -134,38 +135,19 @@
                 </div>
               </div>
               <div class="features-tiles-item-content">
-                <h4 class="mt-0 mb-8">Me</h4>
-                <p class="m-0 text-sm">
+                <h4 class="mt-0 mb-0">Me</h4>
+                <c-drop-down :dropDownData=meString :title=sectionHeader.title>
+                </c-drop-down>
+<!--          
+                <p class="m-0 text-sm" v-if="readMore">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatur. Excepteur sint
                   occaecat cupidatat.
-                </p>
+                </p> -->
               </div>
             </div>
           </div>
 
-          <div class="tiles-item reveal-from-right">
-            <div class="tiles-item-inner">
-              <div class="features-tiles-item-header">
-                <div class="features-tiles-item-image mb-16">
-                  <c-image
-                    :src="require('@/assets/images/feature-tile-icon-05.svg')"
-                    alt="Feature tile icon 05"
-                    :width="72"
-                    :height="72"
-                  />
-                </div>
-              </div>
-              <div class="features-tiles-item-content">
-                <h4 class="mt-0 mb-8">Generate Leads</h4>
-                <p class="m-0 text-sm">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -178,28 +160,34 @@ import CSectionHeader from "@/components/sections/partials/SectionHeader.vue";
 import CImage from "@/components/elements/Image.vue";
 import IArrowDown from "@/components/elements/ArrowDown.vue";
 
+import CDropDown from '@/components/elements/DropDown.vue';
+
 export default {
   name: "CFeaturesTiles",
   components: {
     CSectionHeader,
     CImage,
     IArrowDown,
+    CDropDown
   },
   mixins: [SectionTilesProps],
   data() {
     return {
       sectionHeader: {
         title: "At a Glance",
-        paragraph: "",
+        paragraph: "Let's cut to the chase... Here's what I'm about",
       },
-    //   readMore: false
+      meString:
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint",
+      readMore: false,
+      readMoreWebDev: false,
     };
   },
   methods: {
-      activateReadMore: function () {
-          alert('gonna show more')
-        //   readMore = !readMore
-      }
-  }
+    // activateReadMore: function () {
+    //     // alert('gonna show more')
+    //     readMore = !readMore
+    // }
+  },
 };
 </script>
