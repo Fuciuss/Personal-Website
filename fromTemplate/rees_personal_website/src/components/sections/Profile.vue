@@ -27,10 +27,12 @@
               <h1 class="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="150">
                 Hi... I'm Rees.
               </h1>
-              <p class="mt-0 mb-32 reveal-from-bottom" data-reveal-delay="1000">
+              <p class="mt-0 mb-32 ml-20 reveal-from-bottom" data-reveal-delay="1000">
                 I've just graduated...
               </p>
-              <div class="reveal-from-bottom" data-reveal-delay="450"></div>
+              <p class="mt-0 ml-40 reveal-from-bottom" data-reveal-delay="2000">
+                I'm a big fan of a lot of things...
+              </p>
             </div>
           </div>
         </div>

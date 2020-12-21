@@ -17,7 +17,7 @@
         ]"
       >
         <div class="container-xs">
-          <h2 class="mt-0 center-content">
+          <h2 class="mt-0 center-content rainbow-backed" style="border: 1px solid red">
                 Let's Get In Touch!
           </h2>
           <p class='center-content'>
@@ -27,7 +27,7 @@
           </p>
           <c-footer-social />
           <p class='center-content'>
-            </p>
+          </p>
 
         </div>
       </div>

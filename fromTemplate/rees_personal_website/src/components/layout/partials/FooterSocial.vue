@@ -1,7 +1,7 @@
 <template>
     <div class="footer-social">
         <ul class="list-reset">
-            <li>
+            <li class="rainbow-div">
                 <a href="https://facebook.com/">
                     <svg
                         width="16"

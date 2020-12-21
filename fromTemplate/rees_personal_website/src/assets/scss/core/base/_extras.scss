@@ -1,0 +1,24 @@
+$dark-orange: #f85700;
+$nice-teal: #43d1e6;
+$deep-purple: #603195;
+$orange-again: #f15627;
+$darker-blue: #323272;
+$nicest-blue: #38b3e5;
+$post-light-blue-yellow: #dfd626;
+
+.rainbow-backed {
+  background: linear-gradient(120deg, $dark-orange, $nice-teal, $deep-purple, $darker-blue, $orange-again, $nicest-blue, $post-light-blue-yellow);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  &:hover {
+      border: 1px solid green;
+  }
+}
+
+.rainbow-div {
+  // background: linear-gradient(to bottom right, get-color(sound-wave, dark-orange), get-color(sound-wave, nicest-blue), get-color(sound-wave, deep-purple), get-color(sound-wave, nicest-blue), get-color(sound-wave, nicest-blue));
+  // background: repeating-linear-gradient(get-color(sound-wave, dark-orange))
+  // border: 1px solid white
+  background-image: linear-gradient(120deg, $dark-orange, $nice-teal, $deep-purple, $darker-blue, $orange-again, $nicest-blue, $post-light-blue-yellow);
+}
