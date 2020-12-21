@@ -200,7 +200,7 @@ export default {
     return {
       sectionHeader: {
         title: "At a Glance",
-        paragraph: "Let's cut to the chase... Here's what I'm about",
+        paragraph: "We can cut to the chase... ",
       },
       meString:
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint",
