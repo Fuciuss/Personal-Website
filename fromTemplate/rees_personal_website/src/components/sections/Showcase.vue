@@ -1,6 +1,6 @@
 <template>
     <section
-        class="features-split section"
+        class="features-split section vertical-line"
         :class="[
             topOuterDivider && 'has-top-divider',
             bottomOuterDivider && 'has-bottom-divider',
@@ -23,7 +23,7 @@
                         alignTop && 'align-top'
                     ]">
                     <div class="split-item">
-                        <div class="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
+                        <div class="split-item-content center-content-mobile reveal-from-right justify-text-right text-xs" data-reveal-container=".split-item">
                             <h3 class="mt-0 mb-12">
                                 Botanical Gardens Augmented Reality
                             </h3>
@@ -40,16 +40,21 @@
                         <div
                             class="split-item-image reveal-from-left" data-reveal-container=".split-item"
                             :class="imageFill && 'split-item-image-fill'">
-                            <c-image
+                            <!-- <c-image class="display:none"
                                 :src="require('@/assets/videos/BOTGAR_Trim.webm')"
                                 alt="Features split image 01"
+                                :width="528"
+                                :height="396" /> -->
+                            <c-image
+                                :src="require('@/assets/videos/BOTGAR_SAMPLE.png')"
+                                alt="BOTGAR"
                                 :width="528"
                                 :height="396" />
                         </div>
                     </div>
 
                     <div class="split-item">
-                        <div class="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                        <div class="split-item-content center-content-mobile reveal-from-left text-xs" data-reveal-container=".split-item">
                             <h3 class="mt-0 mb-12">
                                 iGiveThanks
                             </h3>
@@ -85,7 +90,7 @@
                     </div>
 
 
-                    <div class="split-item">
+                    <!-- <div class="split-item">
                         <div class="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                             <h3 class="mt-0 mb-12">
                                 Music Notes
@@ -108,7 +113,7 @@
                                 :width="528"
                                 :height="396" />
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

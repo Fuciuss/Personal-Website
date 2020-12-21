@@ -12,6 +12,10 @@
 	}
 }
 
+.profile-container {
+	max-width: 100%;
+}
+
 .container {
 	max-width: $container--width + ( $container--padding__desktop * 2 );
 }

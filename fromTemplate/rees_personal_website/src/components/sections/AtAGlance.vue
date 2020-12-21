@@ -74,6 +74,12 @@
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
                   <c-image
+                    :src="require('@/assets/images/icons/python_icon.svg')"
+                    alt="Python for machine learning"
+                    :width="72"
+                    :height="72"
+                    />
+                  <c-image
                     :src="require('@/assets/images/icons/pytorch_icon.svg')"
                     alt="Pytorch"
                     :width="72"
@@ -104,7 +110,13 @@
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
                   <c-image
-                    :src="require('@/assets/images/feature-tile-icon-03.svg')"
+                    :src="require('@/assets/images/icons/rocket_monitor_icon.svg')"
+                    alt="Feature tile icon 03"
+                    :width="72"
+                    :height="72"
+                  />
+                  <c-image
+                    :src="require('@/assets/images/icons/rocket_ship_icon.svg')"
                     alt="Feature tile icon 03"
                     :width="72"
                     :height="72"
@@ -132,6 +144,19 @@
                     :width="72"
                     :height="72"
                   />
+                  <c-image
+                    :src="require('@/assets/images/icons/mixer_icon.svg')"
+                    alt = "Fl Studio, Ableton"
+                    :width="72"
+                    :height="72"
+                    />
+                    <c-image
+                    :src="require('@/assets/images/icons/fl_studio_icon.png')"
+                    alt = "FL Studio"
+                    :width="72"
+                    :height="72"
+                    />
+                    
                 </div>
               </div>
               <div class="features-tiles-item-content">
