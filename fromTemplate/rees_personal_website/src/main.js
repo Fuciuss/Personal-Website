@@ -7,8 +7,12 @@ Vue.use(Fragment.Plugin);
 
 Vue.config.productionTip = false
 
+import VueScrollActive from 'vue-scrollactive';
+Vue.use(VueScrollActive);
 
-import router from "./router"
+
+
+import router from "./router";
 
 import '@/assets/scss/style.scss';
 

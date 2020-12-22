@@ -28,22 +28,26 @@
           class="header-nav"
           :class="{ 'is-active': isActive }"
         >
-          <div class="header-nav-inner">
+          <scrollactive class="header-nav-inner">
             <ul
               class="list-reset text-xxs"
               :class="navPosition && `header-nav-${navPosition}`"
             >
               <li>
-                <router-link to="/AtAGlance">At A Glance</router-link>
+                <!-- <router-link to="/AtAGlance">At A Glance</router-link> -->
+                <a href="#at-a-glance-container" class="scrollactive-item">At A Glance</a>
               </li>
               <li>
-                <router-link to="/Showcase">Recent Projects</router-link>
+                <!-- <router-link to="/Showcase">Recent Projects</router-link> -->
+                <!-- <span data-section-selector=".section" class="scrollactive-item">Recent Projects</span> -->
+                <a href="#showcase-container" class="scrollactive-item">Recent Projects</a>
+
               </li>
               <li>
-                <router-link to="/contact/">Contact</router-link>
+                <a href="#contact-container" class="scrollactive-item">Contact</a>
               </li>
             </ul>
-          </div>
+          </scrollactive>
         </nav>
       </div>
     </div>

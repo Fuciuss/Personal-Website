@@ -8,7 +8,7 @@
       invertColor && 'invert-color',
     ]"
   >
-    <div class="container">
+    <div class="container" id="at-a-glance-container">
       <div
         class="features-tiles-inner section-inner"
         :class="[

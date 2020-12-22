@@ -8,7 +8,7 @@
       invertColor && 'invert-color',
     ]"
   >
-    <div class="container">
+    <div class="container" id="contact-container">
       <div
         class="section-inner"
         :class="[
@@ -17,9 +17,12 @@
         ]"
       >
         <div class="container-xs">
-          <h2 class="mt-0 center-content rainbow-backed" style="border: 1px solid red">
+          <!-- <h2 class="mt-0 center-content rainbow-backed" style="border: 1px solid red">
                 Let's Get In Touch!
-          </h2>
+          </h2> -->
+          <c-colored-header headerMessage="Let's Get In Touch!" class="center-content">
+                      </c-colored-header>
+
           <p class='center-content'>
             Brisbane based,
             <br>
@@ -39,11 +42,13 @@
 import { SectionProps } from "@/utils/SectionProps.js";
 
 import CFooterSocial from "@/components/layout/partials/FooterSocial.vue";
+import CColoredHeader from "@/components/elements/ColoredHeader.vue";
 
 export default {
   name: "CContact",
   components: {
-    CFooterSocial
+    CFooterSocial,
+    CColoredHeader
   },
   mixins: [SectionProps],
 };

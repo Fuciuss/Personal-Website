@@ -28,16 +28,14 @@
                 </a>
             </li>
             <li>
+
+                
                 <a href="https://www.linkedin.com/in/rees-pawson-1a11031a5/">
-                    <svg
+                    <img
                         src="@/assets/images/icons/svg_socials/031-linkedin.svg"
                         width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <title>Linked In</title>
-                        
-                    </svg>
+                        height="16"                        
+                    >
                 </a>
             </li>
             <li>

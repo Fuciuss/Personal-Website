@@ -1,13 +1,13 @@
 <template>
     <section
-        class="features-split section vertical-line"
+        class="features-split section"
         :class="[
             topOuterDivider && 'has-top-divider',
             bottomOuterDivider && 'has-bottom-divider',
             hasBgColor && 'has-bg-color',
             invertColor && 'invert-color'
         ]">
-        <div class="container">
+        <div class="container" id="showcase-container">
             <div
                 class="features-split-inner section-inner"
                 :class="[

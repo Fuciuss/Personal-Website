@@ -7,13 +7,10 @@ $nicest-blue: #38b3e5;
 $post-light-blue-yellow: #dfd626;
 
 .rainbow-backed {
-  background: linear-gradient(120deg, $dark-orange, $nice-teal, $deep-purple, $darker-blue, $orange-again, $nicest-blue, $post-light-blue-yellow);
+  // background: linear-gradient(120deg, $dark-orange, $nice-teal, $deep-purple, $darker-blue, $orange-again, $nicest-blue, $post-light-blue-yellow);
+  background: linear-gradient(90deg, #00C0FF 20%, #FFCF00 49%, #FC4F4F 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-
-  &:hover {
-      border: 1px solid green;
-  }
 }
 
 .rainbow-div {
