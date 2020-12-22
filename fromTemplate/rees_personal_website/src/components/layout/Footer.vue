@@ -7,7 +7,7 @@
                     <c-footer-social />
                 </div>
                 <div class="footer-bottom space-between text-xxs invert-order-desktop">
-                    <c-footer-nav />
+                    <!-- <c-footer-nav /> -->
                     <div class="footer-copyright"></div>
                 </div>
             </div>
@@ -17,14 +17,13 @@
 
 <script>
 import CLogo from '@/components/layout/partials/Logo.vue'
-import CFooterNav from '@/components/layout/partials/FooterNav.vue'
+// import CFooterNav from '@/components/layout/partials/FooterNav.vue'
 import CFooterSocial from '@/components/layout/partials/FooterSocial.vue'
 
 export default {
   name: 'CFooter',
   components: {
     CLogo,
-    CFooterNav,
     CFooterSocial
   },
   props: {

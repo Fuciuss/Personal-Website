@@ -136,7 +136,7 @@ export default {
     return {
       sectionHeader: {
         title: 'Recent Projects',
-        paragraph: 'A couple of recent projects..'
+        paragraph: 'A little bit of what I worked on this year...'
       }
     }
   }

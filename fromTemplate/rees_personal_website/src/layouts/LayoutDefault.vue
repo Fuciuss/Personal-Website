@@ -5,6 +5,7 @@
       <slot />
     </main>
     <c-footer />
+    <!-- <c-header nav-position="right" class="reveal-from-top" /> -->
   </fragment>
 </template>
 
