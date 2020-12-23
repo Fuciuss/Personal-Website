@@ -2,7 +2,7 @@
   <div class="footer-social icons-vertical-center">
     <ul class="list-reset rainbow-backed">
       <li>
-        <a href="https://www.linkedin.com/in/rees-pawson-1a11031a5/">
+        <a href="mailto:reespawson@gmail.com">
           <img
             src="@/assets/images/icons/mail_con.svg"
             width="32"
