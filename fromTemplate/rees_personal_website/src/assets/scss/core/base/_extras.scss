@@ -19,3 +19,29 @@ $post-light-blue-yellow: #dfd626;
   // border: 1px solid white
   background-image: linear-gradient(120deg, $dark-orange, $nice-teal, $deep-purple, $darker-blue, $orange-again, $nicest-blue, $post-light-blue-yellow);
 }
+
+
+.remove-bullets {
+ 
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+  
+}
+
+
+.flip-color {
+  -webkit-filter:invert(1);
+}
+
+
+.icons-vertical-center {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+
+.red-border {
+  border: 1px solid red;
+}

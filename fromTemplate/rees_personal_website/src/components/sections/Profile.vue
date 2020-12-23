@@ -31,8 +31,7 @@
                 I've just graduated...
               </p>
               <p class="mt-0 ml-40 reveal-from-bottom" data-reveal-delay="2000">
-                I'm a big fan of a lot of things...
-              </p>
+                              </p>
             </div>
           </div>
         </div>

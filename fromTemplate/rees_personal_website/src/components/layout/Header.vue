@@ -3,7 +3,7 @@
     class="site-header"
     :class="bottomOuterDivider && 'has-bottom-divider'"
   >
-    <div class="container">
+    <div class="container" id="top-of-page">
       <div
         class="site-header-inner"
         :class="bottomDivider && 'has-bottom-divider'"

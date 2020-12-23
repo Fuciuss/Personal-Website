@@ -24,10 +24,16 @@
                       </c-colored-header>
 
           <p class='center-content'>
-            Brisbane based,
+            I'm based in Brisbane
             <br>
-            Let's link up
-          </p>
+            <!-- <img
+                        src="@/assets/images/icons/mail_icon.svg"
+                        width="16"
+                        height="16"   
+                        class="flip-color display:inline"                     
+                    > -->
+
+          <p class='center-content'>
           <c-footer-social />
           <p class='center-content'>
           </p>

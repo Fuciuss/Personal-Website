@@ -1,24 +1,32 @@
 <template>
-    <nav class="footer-nav">
-        <ul class="list-reset">
-            <li>
-                <router-link to="/contact/">Contact</router-link>
-            </li>
-            <li>
-                <router-link to="/about-us/">About us</router-link>
-            </li>
-            <li>
-                <router-link to="/faqs/">FAQ's</router-link>
-            </li>
-            <li>
-                <router-link to="/support/">Support</router-link>
-            </li>
-        </ul>
-    </nav>
+  <scrollactive class="footer-nav">
+    <ul class="list-reset">
+      <li>
+        <a href="#top-of-page" class="scrollactive-item"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a href="#at-a-glance-container" class="scrollactive-item"
+          >At A Glance</a
+        >
+      </li>
+      <li>
+        <a href="#showcase-container" class="scrollactive-item"
+          >Recent Projects</a
+        >
+      </li>
+      <li>
+                <a href="#contact-container" class="scrollactive-item">Contact</a>
+        
+      </li>
+
+    </ul>
+  </scrollactive>
 </template>
 
 <script>
 export default {
-  name: 'CFooterNav'
-}
+  name: "CFooterNav",
+};
 </script>

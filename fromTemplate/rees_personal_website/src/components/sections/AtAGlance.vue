@@ -53,8 +53,9 @@
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">Web Development</h4>
-                <i-arrow-down v-on:click.native="readMoreWebDev = !readMoreWebDev"/>
 
+                <c-drop-down :dropDownData=meString :title=sectionHeader.title>
+                </c-drop-down>
                 <p class="m-0 text-sm" v-if="readMoreWebDev" >
                   Web development is an excellent way to give ideas and problem solutions a face.
                   It may not be pretty, but god dammit it gets the job done.
@@ -100,7 +101,8 @@
                 </p>
 
               </div>
-                <i-arrow-down v-on:click.native="readMore = !readMore"/>
+                <c-drop-down :dropDownData=meString :title=sectionHeader.title>
+                </c-drop-down>
               
             </div>
           </div>
@@ -130,6 +132,8 @@
                   cillum dolore eu fugiat nulla pariatur. Excepteur sint
                   occaecat cupidatat.
                 </p>
+                <c-drop-down :dropDownData=meString :title=sectionHeader.title>
+                </c-drop-down>
               </div>
             </div>
           </div>
@@ -183,7 +187,6 @@
 import { SectionTilesProps } from "@/utils/SectionProps.js";
 import CSectionHeader from "@/components/sections/partials/SectionHeader.vue";
 import CImage from "@/components/elements/Image.vue";
-import IArrowDown from "@/components/elements/ArrowDown.vue";
 
 import CDropDown from '@/components/elements/DropDown.vue';
 
@@ -192,7 +195,6 @@ export default {
   components: {
     CSectionHeader,
     CImage,
-    IArrowDown,
     CDropDown
   },
   mixins: [SectionTilesProps],

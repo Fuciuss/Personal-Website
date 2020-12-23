@@ -1,7 +1,7 @@
 <template>
     <li :class="{ 'is-active': isActive }">
 
-        <div class="dropdown-header dropdown-emboss" @click="isActive ? closeItem() : openItem()">
+        <div class="dropdown-header" @click="isActive ? closeItem() : openItem()">
             <!-- <span class="h6 m-0"> {{title}}</span> -->
             <i-arrow-down />
         </div>
