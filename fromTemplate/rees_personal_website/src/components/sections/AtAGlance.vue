@@ -148,17 +148,16 @@
                     :width="72"
                     :height="72"
                   />
-                  <c-image
+                  <!-- <c-image
                     :src="require('@/assets/images/icons/mixer_icon.svg')"
                     alt = "Fl Studio, Ableton"
                     :width="72"
                     :height="72"
-                    />
+                    /> -->
                     <c-image
                     :src="require('@/assets/images/icons/fl_studio_icon.png')"
                     alt = "FL Studio"
                     :width="72"
-                    :height="72"
                     />
                     
                 </div>
