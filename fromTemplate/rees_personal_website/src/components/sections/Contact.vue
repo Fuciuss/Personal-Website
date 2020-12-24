@@ -16,15 +16,15 @@
           bottomDivider && 'has-bottom-divider',
         ]"
       >
-        <div class="container-xs">
+        <div class="container-s">
           <!-- <h2 class="mt-0 center-content rainbow-backed" style="border: 1px solid red">
                 Let's Get In Touch!
           </h2> -->
           <c-colored-header headerMessage="Let's Get In Touch!" class="center-content">
                       </c-colored-header>
 
-          <p class='center-content'>
-            I'm based in Brisbane
+          <p class='center-content mt-16'>
+            I'm based in Brisbane, love a fresh perspective, and struggle to say no to coffee.
             <br>
             <!-- <img
                         src="@/assets/images/icons/mail_icon.svg"

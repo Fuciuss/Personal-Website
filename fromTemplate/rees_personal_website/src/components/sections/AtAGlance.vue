@@ -54,19 +54,12 @@
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">Web Development</h4>
 
-                <c-drop-down :dropDownData=meString :title=sectionHeader.title>
+                <c-drop-down
+                  :dropDownData="webDevelopment"
+                  :title="sectionHeader.title"
+                >
                 </c-drop-down>
-                <p class="m-0 text-sm" v-if="readMoreWebDev" >
-                  Web development is an excellent way to give ideas and problem solutions a face.
-                  It may not be pretty, but god dammit it gets the job done.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat.Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat.
-                </p>
               </div>
-
             </div>
           </div>
 
@@ -79,7 +72,7 @@
                     alt="Python for machine learning"
                     :width="72"
                     :height="72"
-                    />
+                  />
                   <c-image
                     :src="require('@/assets/images/icons/pytorch_icon.svg')"
                     alt="Pytorch"
@@ -96,14 +89,12 @@
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">Artificial Intelligence</h4>
-                <p class="m-0 text-sm" v-if="readMore">
-                  This is where I will be writing a bunch of nonsense about artificial intelligence
-                </p>
-
               </div>
-                <c-drop-down :dropDownData=meString :title=sectionHeader.title>
-                </c-drop-down>
-              
+              <c-drop-down
+                :dropDownData="artificialIntelligence"
+                :title="sectionHeader.title"
+              >
+              </c-drop-down>
             </div>
           </div>
 
@@ -112,7 +103,9 @@
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
                   <c-image
-                    :src="require('@/assets/images/icons/rocket_monitor_icon.svg')"
+                    :src="
+                      require('@/assets/images/icons/rocket_monitor_icon.svg')
+                    "
                     alt="Feature tile icon 03"
                     :width="72"
                     :height="72"
@@ -126,13 +119,16 @@
                 </div>
               </div>
               <div class="features-tiles-item-content">
-                <h4 class="mt-0 mb-8">Entrepreneurship</h4>
+                <h4 class="mt-0 mb-8">Design and Entrepreneurship</h4>
                 <p class="m-0 text-sm" v-if="readMore">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatur. Excepteur sint
                   occaecat cupidatat.
                 </p>
-                <c-drop-down :dropDownData=meString :title=sectionHeader.title>
+                <c-drop-down
+                  :dropDownData="entrepreneurship"
+                  :title="sectionHeader.title"
+                >
                 </c-drop-down>
               </div>
             </div>
@@ -154,19 +150,21 @@
                     :width="72"
                     :height="72"
                     /> -->
-                    <c-image
+                  <c-image
                     :src="require('@/assets/images/icons/fl_studio_icon.png')"
-                    alt = "FL Studio"
+                    alt="FL Studio"
                     :width="72"
-                    />
-                    
+                  />
                 </div>
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-0">Me</h4>
-                <c-drop-down :dropDownData=meString :title=sectionHeader.title>
+                <c-drop-down
+                  :dropDownData="me"
+                  :title="sectionHeader.title"
+                >
                 </c-drop-down>
-<!--          
+                <!--          
                 <p class="m-0 text-sm" v-if="readMore">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatur. Excepteur sint
@@ -175,7 +173,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -187,14 +184,14 @@ import { SectionTilesProps } from "@/utils/SectionProps.js";
 import CSectionHeader from "@/components/sections/partials/SectionHeader.vue";
 import CImage from "@/components/elements/Image.vue";
 
-import CDropDown from '@/components/elements/DropDown.vue';
+import CDropDown from "@/components/elements/DropDown.vue";
 
 export default {
   name: "CFeaturesTiles",
   components: {
     CSectionHeader,
     CImage,
-    CDropDown
+    CDropDown,
   },
   mixins: [SectionTilesProps],
   data() {
@@ -203,10 +200,14 @@ export default {
         title: "At a Glance",
         paragraph: "We can cut to the chase... ",
       },
-      meString:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint",
-      readMore: false,
-      readMoreWebDev: false,
+      webDevelopment:
+        "To me, web development is the face of technology. The ability to communicate technology effectively with the broader public is fundamental to creating real solutions for people. I studied web technologies briefly in university but am mostly a self taught Vue.js developer. I have strong javascript, html and CSS fundamentals and i’m always looking forward to the opportunity to explore different technologies.",
+      artificialIntelligence:
+        "I’m fascinated by all things artificial intelligence. After a brief introduction to machine learning at university I continue to expand my understanding by reading and experimenting with the latest machine learning papers. In the future, I plan to work on machine learning based products to change the world for the better.",
+      entrepreneurship:
+        "I could brainstorm for days on end. Getting to the core of things is at the core of me. I am fulfilled by ideating and creating solutions for real people with real problems.",
+      me:
+        "I’m optimistic, focused and have an appetite for learning. I love travelling, language, culture and expanding my understanding of the human species and condition. In my spare time I play, jam and compose music. I maintain a daily yoga and meditation practice. I like being given the time to sink my teeth into difficult projects, and I’m confident in my ability to independently problem solve. I thrive best in an environment where ideas are discussed openly and thoughtful questions are encouraged.",
     };
   },
   methods: {
