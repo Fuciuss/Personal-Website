@@ -198,7 +198,7 @@ export default {
     return {
       sectionHeader: {
         title: "At a Glance",
-        paragraph: "We can cut to the chase... ",
+        paragraph: "",
       },
       webDevelopment:
         "To me, web development is the face of technology. The ability to communicate technology effectively with the broader public is fundamental to creating real solutions for people. I studied web technologies briefly in university but am mostly a self taught Vue.js developer. I have strong javascript, html and CSS fundamentals and i’m always looking forward to the opportunity to explore different technologies.",
