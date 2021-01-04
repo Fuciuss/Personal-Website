@@ -150,11 +150,11 @@
                     :width="72"
                     :height="72"
                     /> -->
-                  <c-image
+                  <!-- <c-image
                     :src="require('@/assets/images/icons/fl_studio_icon.png')"
                     alt="FL Studio"
                     :width="72"
-                  />
+                  /> -->
                 </div>
               </div>
               <div class="features-tiles-item-content">

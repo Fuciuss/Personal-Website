@@ -32,14 +32,22 @@
             >
               <h3 class="mt-0 mb-12">BotgAR</h3>
               <ul class="remove-bullets">
+                <li>Botanical Gardens Augmented Reality</li>
+                <li>Android Application developed in Unity</li>
                 <li>
-Botanical Gardens Augmented Reality                </li>
-<li>Android Application developed in Unity</li>
-<li><a href="https://www.qut.edu.au/research/study-with-us/student-topics/topics/augmented-sociality-enabling-a-participatory-experience-of-augmented-reality">
-Part of QUT's 'Augmented Sociality Research</a></li>
-<li>
-</li>
-
+                  <a
+                    href="https://www.qut.edu.au/research/study-with-us/student-topics/topics/augmented-sociality-enabling-a-participatory-experience-of-augmented-reality"
+                  >
+                    Part of QUT's 'Augmented Sociality Research</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/KidCon/BOTGAR"
+                    target="_blank"
+                    >Code Available on Github</a
+                  >
+                </li>
               </ul>
             </div>
             <div
@@ -84,6 +92,13 @@ Part of QUT's 'Augmented Sociality Research</a></li>
                     href="https://twitter.com/OQCE_/status/1239117083146764289?s=20"
                     target="_blank"
                     >Overall weekend finalist</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/lutzenburg/APPreciation"
+                    target="_blank"
+                    >Code Available on Github</a
                   >
                 </li>
               </ul>
