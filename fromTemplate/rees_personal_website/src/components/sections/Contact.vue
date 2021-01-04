@@ -24,7 +24,7 @@
                       </c-colored-header>
 
           <p class='center-content mt-16'>
-            I'm based in Brisbane, love a fresh perspective, and struggle to say no to coffee.
+            I'm based in Brisbane, love a fresh perspective, and can't say no to coffee.
             <br>
             <!-- <img
                         src="@/assets/images/icons/mail_icon.svg"
