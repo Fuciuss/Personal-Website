@@ -3,12 +3,13 @@
 
     <c-profile class="illustration-section-01" />
 
-    <!-- <c-profile /> -->
+        <c-profile-splash style="display: none" />
 
-
+<!-- <c-profile-splash /> -->
     <c-at-a-glance top-divider class = "center-content" />
 
     <c-showcase invert-mobile top-divider image-fill />
+    
 
     <c-contact class="reveal-from-top"/>
   </fragment>
@@ -24,8 +25,8 @@ import CLayout from '@/layouts/LayoutDefault.vue'
 import CProfile from "@/components/sections/Profile.vue";
 import CShowcase from "@/components/sections/Showcase.vue";
 import CContact from "@/components/sections/Contact.vue";
-
 import CAtAGlance from "@/components/sections/AtAGlance.vue";
+import CProfileSplash from "@/components/sections/ProfileSplash.vue";
 
 export default {
   name: "Home",
@@ -33,7 +34,8 @@ export default {
     CProfile,
     CShowcase,
     CContact,
-    CAtAGlance
+    CAtAGlance,
+    CProfileSplash
   },
   data() {
     return {};
