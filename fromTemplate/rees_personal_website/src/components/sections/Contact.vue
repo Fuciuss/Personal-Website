@@ -20,11 +20,10 @@
           <!-- <h2 class="mt-0 center-content rainbow-backed" style="border: 1px solid red">
                 Let's Get In Touch!
           </h2> -->
-          <c-colored-header headerMessage="Let's Get In Touch!" class="center-content">
-                      </c-colored-header>
+          <sliding-gradient-header />
 
           <p class='center-content mt-16'>
-            I'm based in Brisbane, love a fresh perspective, and can't say no to coffee.
+            Brisbane based, open to anything, love a coffee.
             <br>
             <!-- <img
                         src="@/assets/images/icons/mail_icon.svg"
@@ -48,13 +47,13 @@
 import { SectionProps } from "@/utils/SectionProps.js";
 
 import CFooterSocial from "@/components/layout/partials/FooterSocial.vue";
-import CColoredHeader from "@/components/elements/ColoredHeader.vue";
+import SlidingGradientHeader from "@/components/elements/SlidingGradientHeader.vue";
 
 export default {
   name: "CContact",
   components: {
     CFooterSocial,
-    CColoredHeader
+    SlidingGradientHeader
   },
   mixins: [SectionProps],
 };

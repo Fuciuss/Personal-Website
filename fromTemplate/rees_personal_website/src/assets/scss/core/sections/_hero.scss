@@ -1,80 +1,97 @@
+// Hero (core/sections/_hero.scss) -----------------------------
+$hero--padding-t__mobile: 450px; // hero, top padding (mobile)
+$hero--padding-b__mobile: null; // hero, bottom padding (mobile)
+$hero--padding-t__desktop: null; // hero, top padding (desktop)
+$hero--padding-b__desktop: null; // hero, bottom padding (desktop)
+$hero--inner-padding-v_mobile: 48px; // vertical padding, i.e. padding between content and image (mobile, both hero split and hero full)
+$hero--inner-padding-v_desktop: 64px; // vertical padding, i.e. padding between content and image (desktop, only hero full)
 
-#main-profile {
-	// border: 1px solid white;
-	margin-left: 15%;
-	margin-top: 20%;
+
+
+@include media("<=medium") {
+  .hero {
+    .section-inner {
+      // border: 1px solid white;
+      padding-top: $hero--padding-t__mobile;
+      padding-bottom: $hero--padding-b__mobile;
+    }
+  }
 }
 
-
-.hero {
-	.section-inner {
-		// border: 1px solid white;
-		padding-top: $hero--padding-t__mobile;
-		padding-bottom: $hero--padding-b__mobile;
-	}
-}
-
-.hero-inner {
-
-	// Affects only hero full
-	> .hero-content + .hero-figure,
-	> .hero-figure + .hero-content {
-		margin-top: $hero--inner-padding-v_mobile;
-	}
-
-	> .hero-figure {
-
-		> a {
-			display: inline-flex;
-			// prevents stretching
-			align-items: center;
-			vertical-align: top;
-		}
-	}
-}
-
-@include media( '<=medium' ) {
-
-	.hero {
-
-		.split-wrap {
-
-			.split-item {
-
-				.split-item-content {
-					margin-bottom: $hero--inner-padding-v_mobile;
-				}
-			}
-
-			&.invert-mobile {
-
-				.split-item {
-
-					.split-item-image {
-						margin-bottom: $hero--inner-padding-v_mobile;
-					}
-				}
-			}
-		}
-	}
-}
 
 @include media( '>medium' ) {
 
+	#main-profile {
+		width: 700px;
+	//   border: 1px solid white;
+	  // margin-left: 15%;
+	  // margin-top: 20%;
+	}
+
 	.hero {
-
 		.section-inner {
-			padding-top: $hero--padding-t__desktop;
-			padding-bottom: $hero--padding-b__desktop;
+			padding-left: 25%;
+			padding-top: 20%;
 		}
 	}
 
-	.hero-inner {
+	.hero-content {
+		width: 500px;
 
-		// Affects only hero full
-		> .hero-content + .hero-figure,
-		> .hero-figure + .hero-content {
-			margin-top: $hero--inner-padding-v_desktop;
-		}
 	}
+
+}
+
+.hero-inner {
+  // Affects only hero full
+  > .hero-content + .hero-figure,
+  > .hero-figure + .hero-content {
+    margin-top: $hero--inner-padding-v_mobile;
+  }
+
+  > .hero-figure {
+    > a {
+      display: inline-flex;
+      // prevents stretching
+      align-items: center;
+      vertical-align: top;
+    }
+  }
+}
+
+@include media("<=medium") {
+  .hero {
+    .split-wrap {
+      .split-item {
+        .split-item-content {
+          margin-bottom: $hero--inner-padding-v_mobile;
+        }
+      }
+
+      &.invert-mobile {
+        .split-item {
+          .split-item-image {
+            margin-bottom: $hero--inner-padding-v_mobile;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(">medium") {
+  .hero {
+    .section-inner {
+      padding-top: $hero--padding-t__desktop;
+      padding-bottom: $hero--padding-b__desktop;
+    }
+  }
+
+  .hero-inner {
+    // Affects only hero full
+    > .hero-content + .hero-figure,
+    > .hero-figure + .hero-content {
+      margin-top: $hero--inner-padding-v_desktop;
+    }
+  }
 }

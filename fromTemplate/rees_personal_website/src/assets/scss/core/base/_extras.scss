@@ -6,19 +6,27 @@ $darker-blue: #323272;
 $nicest-blue: #38b3e5;
 $post-light-blue-yellow: #dfd626;
 
-.rainbow-backed {
-  // background: linear-gradient(120deg, $dark-orange, $nice-teal, $deep-purple, $darker-blue, $orange-again, $nicest-blue, $post-light-blue-yellow);
-  background: linear-gradient(90deg, #00C0FF 20%, #FFCF00 49%, #FC4F4F 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
+// .rainbow-backed {
+//   // background: linear-gradient(120deg, $dark-orange, $nice-teal, $deep-purple, $darker-blue, $orange-again, $nicest-blue, $post-light-blue-yellow);
+//   background: linear-gradient(90deg, #00C0FF 20%, #FFCF00 49%, #FC4F4F 100%);
+//   -webkit-text-fill-color: transparent;
+//   -webkit-background-clip: text;
+// }
 
-.rainbow-div {
-  // background: linear-gradient(to bottom right, get-color(sound-wave, dark-orange), get-color(sound-wave, nicest-blue), get-color(sound-wave, deep-purple), get-color(sound-wave, nicest-blue), get-color(sound-wave, nicest-blue));
-  // background: repeating-linear-gradient(get-color(sound-wave, dark-orange))
-  // border: 1px solid white
-  background-image: linear-gradient(120deg, $dark-orange, $nice-teal, $deep-purple, $darker-blue, $orange-again, $nicest-blue, $post-light-blue-yellow);
-}
+// .scrolling-gradient {
+//   height: 200px;
+//   width: 500px;
+//   background: linear-gradient(90deg, #00C0FF 20%, #FFCF00 49%, #FC4F4F 100%);
+//   -webkit-text-fill-color: transparent;
+//   -webkit-background-clip: text;
+// }
+
+// .rainbow-div {
+//   // background: linear-gradient(to bottom right, get-color(sound-wave, dark-orange), get-color(sound-wave, nicest-blue), get-color(sound-wave, deep-purple), get-color(sound-wave, nicest-blue), get-color(sound-wave, nicest-blue));
+//   // background: repeating-linear-gradient(get-color(sound-wave, dark-orange))
+//   // border: 1px solid white
+//   background-image: linear-gradient(120deg, $dark-orange, $nice-teal, $deep-purple, $darker-blue, $orange-again, $nicest-blue, $post-light-blue-yellow);
+// }
 
 
 .remove-bullets {
@@ -44,4 +52,93 @@ $post-light-blue-yellow: #dfd626;
 
 .red-border {
   border: 1px solid red;
+}
+
+
+
+#profile-splash{
+  // position: absolute;
+  border: 5px solid red;
+width: 100%;
+height: 500px;
+/* position: relative;
+top: -5%;
+left: 0; */
+background-image: url('../images/just_wave_optimized@3x.png');
+background-repeat: no-repeat;
+background-size: cover;
+// background-image: url(https://freedesignfile.com/upload/2018/07/Colorful-splash-background-Stock-Photo-06.jpg)
+}
+
+
+
+
+
+// COLORED HEADER
+
+#animated-text, #flag-container{
+  text-align: center;
+  
+
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-position-x: 0;
+  background-position-y: 0;
+  background-size: 200% 100%;
+
+  // for the example of text shadow
+  // text is transparent to get text clipped gradient
+  // text-shadow: 0 0 2px black;
+
+  animation-name: whoosh;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+  $first-color: #43d1e6;
+  $second-color: #dfd626;
+  $third-color: #f85700;
+  $fourth-color: #603195;
+  $angle: 90deg;
+
+
+@keyframes whoosh {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+@mixin flag-gradient($direction: null, $color-stops...) {
+  $grads: $color-stops;
+  @each $stop in $color-stops {
+    $grads: append($grads, $stop);
+  }
+  $grads: append($grads, nth(nth($grads, 1), 1));
+
+  @if $direction == null {
+    $direction: 75deg;
+    @media only screen and (max-width: 800px) {
+      $direction: 80deg;
+    }
+    @media only screen and (max-width: 500px) {
+      $direction: 90deg;
+    }
+  }
+
+  background-image: linear-gradient($direction, $grads);
+}
+
+.moving-gradient-background,
+check-gradient {
+  & > #flag-container {
+    @include flag-gradient(null, #43d1e6, #dfd626, #f85700, #603195);
+  }
 }

@@ -120,11 +120,6 @@
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">Design and Entrepreneurship</h4>
-                <p class="m-0 text-sm" v-if="readMore">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat.
-                </p>
                 <c-drop-down
                   :dropDownData="entrepreneurship"
                   :title="sectionHeader.title"

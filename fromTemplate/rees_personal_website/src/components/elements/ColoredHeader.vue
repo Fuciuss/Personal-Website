@@ -1,10 +1,19 @@
 <template>
-    <h2 class="rainbow-backed">{{ headerMessage }}</h2>
+  <div class="scrolling-gradient-background">
+    
+    <div class="flag-container">{{ headerMessage }}</div>
+  </div>  
+
+
 </template>
 
 
 
+
+
+
 <script>
+
 export default {
   props: {
     headerMessage: {

@@ -11,6 +11,10 @@ import VueScrollActive from 'vue-scrollactive';
 Vue.use(VueScrollActive);
 
 
+import VueAnime from 'animejs/lib/anime.es.js';
+Vue.use(VueAnime);
+
+
 
 import router from "./router";
 

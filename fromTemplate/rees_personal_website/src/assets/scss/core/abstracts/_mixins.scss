@@ -183,10 +183,16 @@
 	height: $height;
 	background-image: url(../images/#{$file});
 	background-repeat: no-repeat;
+
+	@media screen and (min-width: 1400px) {
+		-moz-background-size: 100% 100%;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;		
+	}
 	@if( unit( $height ) == '%' ) {
-		background-size: contain;
+		background-size: cover;
 	} @else {
-		background-size: auto;
+		background-size: cover;
 	}
 	@if ( $hoffset ) {
 		left: calc(50% + #{$hoffset});
