@@ -4,7 +4,7 @@
 
 
     <c-profile class="illustration-section-01" />
-        <c-anime style="display: none"/>
+    <c-glass style="display:none"/>
 
 
 
@@ -36,9 +36,7 @@ import CShowcase from "@/components/sections/Showcase.vue";
 import CContact from "@/components/sections/Contact.vue";
 import CAtAGlance from "@/components/sections/AtAGlance.vue";
 import CProfileSplash from "@/components/sections/ProfileSplash.vue";
-
-import CAnime from "@/components/elements/AnimejsCallbacks.vue";
-// import RisingStrongText from "@/components/elements/RisingStrongText.vue";
+import CGlass from "@/components/elements/Glass.vue";
 
 export default {
   name: "Home",
@@ -48,7 +46,8 @@ export default {
     CContact,
     CAtAGlance,
     CProfileSplash,
-    CAnime
+    CGlass
+
       },
   data() {
     return {}

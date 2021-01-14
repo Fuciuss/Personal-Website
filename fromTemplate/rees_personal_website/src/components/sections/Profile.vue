@@ -31,12 +31,12 @@
                 class="mt-0 mb-32 ml-20 reveal-from-bottom"
                 data-reveal-delay="1000"
               >
-                I've just graduated... You can find me:
+                I've just graduated... You'll find me:
               </p>
               <!-- <p class="mt-0 ml-40 reveal-from-bottom" style="display: inline" data-reveal-delay="2000">
                 You can find me...
               </p> -->
-              <rising-strong-text class="reveal-from-bottom" data-reveal-delay="1500" style="display: inline" />
+              <c-animated-text class="reveal-from-bottom" data-reveal-delay="1500" style="display: inline" />
             </div>
           </div>
         </div>
@@ -51,13 +51,13 @@ import { SectionSplitProps } from "@/utils/SectionProps.js";
 
 import CImage from "@/components/elements/Image.vue";
 
-import RisingStrongText from "@/components/elements/RisingStrongText.vue";
+import CAnimatedText from "@/components/elements/AnimatedText.vue";
 
 export default {
   name: "Profile",
   components: {
     CImage,
-    RisingStrongText,
+    CAnimatedText,
   },
   mixins: [SectionSplitProps],
 };
