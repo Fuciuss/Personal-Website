@@ -23,7 +23,7 @@
           <sliding-gradient-header />
 
           <p class='center-content mt-16'>
-            Brisbane based, open to anything, love a coffee.
+            Brisbane based, love coffee.
             <br>
             <!-- <img
                         src="@/assets/images/icons/mail_icon.svg"
