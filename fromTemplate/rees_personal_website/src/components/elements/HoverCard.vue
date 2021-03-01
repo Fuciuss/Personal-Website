@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <h3 class="mt-0 mb-8">{{ displayText }}</h3>
+    <h4 class="mt-0 mb-8">{{ displayText }}</h4>
   </section>
 </template>
 
