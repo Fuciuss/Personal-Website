@@ -63,7 +63,7 @@
 		}
 
 		.section-header {
-			padding-bottom: $features-tiles-header--padding__desktop;
+			padding-bottom: $features-tiles-header--padding__desktop - 40;
 		}
 
 		@if ( $features-tiles-items--padding__desktop != null ) {

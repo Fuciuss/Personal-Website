@@ -177,9 +177,10 @@
 <script>
 import { SectionTilesProps } from "@/utils/SectionProps.js";
 import CSectionHeader from "@/components/sections/partials/SectionHeader.vue";
-import CImage from "@/components/elements/Image.vue";
-
+import CImage from "@/components/elements/Image.vue"; 
 import CDropDown from "@/components/elements/DropDown.vue";
+
+
 
 export default {
   name: "CFeaturesTiles",

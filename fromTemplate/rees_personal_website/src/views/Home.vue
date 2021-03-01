@@ -15,7 +15,9 @@
 <c-profile-splash style="display:none;position: absolute"/>
 
 
-    <c-at-a-glance top-divider class = "center-content" />
+    <!-- <c-at-a-glance top-divider class = "center-content" /> -->
+
+    <c-at-a-glance-v2 top-divider class = "center-content" />
 
     <c-showcase invert-mobile top-divider image-fill />
     
@@ -34,7 +36,8 @@ import CLayout from '@/layouts/LayoutDefault.vue'
 import CProfile from "@/components/sections/Profile.vue";
 import CShowcase from "@/components/sections/Showcase.vue";
 import CContact from "@/components/sections/Contact.vue";
-import CAtAGlance from "@/components/sections/AtAGlance.vue";
+// import CAtAGlance from "@/components/sections/AtAGlance.vue";
+import CAtAGlanceV2 from "@/components/sections/AtAGlanceV2.vue";
 import CProfileSplash from "@/components/sections/ProfileSplash.vue";
 import CGlass from "@/components/elements/Glass.vue";
 
@@ -44,7 +47,7 @@ export default {
     CProfile,
     CShowcase,
     CContact,
-    CAtAGlance,
+    CAtAGlanceV2,
     CProfileSplash,
     CGlass
 

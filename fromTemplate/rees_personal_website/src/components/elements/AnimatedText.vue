@@ -34,137 +34,24 @@ export default {
         { id: "text-id-0", title: "Developing for the web" },
         {
           id: "text-id-1",
-          title: "Playing with the latest machine learning algorithms",
+          title: "Playing with the latest machine learning tech",
         },
         { id: "text-id-2", title: "Writing and playing music" },
         { id: "text-id-3", title: "At the local" },
-        { id: "text-id-4", title: "Animating text apparently" },
+        { id: "text-id-4", title: "Animating text.. apparently" },
         { id: "text-id-5", title: "Losing touch with what the kids are into" },
         { id: "text-id-6", title: "Daydreaming about cold brew" },
-        { id: "text-id-7", title: "Animating text apparently" },
-        { id: "text-id-8", title: "Maintaining ontological equipment" },
+        { id: "text-id-7", title: "Maintaining ontological equipment" },
       ],
       // bindClass = "texting",
       bindColor: "red",
     };
   },
   methods: {
-    // animateText() {
-    //   console.log(this.texts);
-
-    //   var textWrapper = document.querySelector(".ml13");
-    //   textWrapper.innerHTML = textWrapper.textContent.replace(
-    //     /\S/g,
-    //     "<span class='letter'>$&</span>"
-    //   );
-    //   var textWrapper2 = document.querySelector(".ml14");
-    //   textWrapper2.innerHTML = textWrapper2.textContent.replace(
-    //     /\S/g,
-    //     "<span class='letter'>$&</span>"
-    //   );
-
-    //   anime
-    //     .timeline({ loop: true })
-    //     .add({
-    //       targets: ".ml13 .letter",
-    //       translateY: [100, 0],
-    //       translateZ: 0,
-    //       opacity: [0, 1],
-    //       easing: "easeOutExpo",
-    //       duration: 1400,
-    //       delay: (el, i) => 300 + 30 * i,
-    //     })
-    //     .add({
-    //       targets: ".ml13 .letter",
-    //       translateY: [0, -100],
-    //       opacity: [1, 0],
-    //       easing: "easeInExpo",
-    //       duration: 1200,
-    //       delay: (el, i) => 100 + 30 * i,
-    //       complete: function () {
-    //         var change = document.querySelector(".ml13");
-    //         change.style.display = "none";
-    //         // alert('complete');
-    //       },
-    //     })
-    //     .add({
-    //       targets: ".ml14 .letter",
-    //       translateY: [100, 0],
-    //       translateZ: 0,
-    //       opacity: [0, 1],
-    //       easing: "easeOutExpo",
-    //       duration: 1400,
-    //       delay: (el, i) => 300 + 30 * i,
-    //     })
-    //     .add({
-    //       targets: ".ml14 .letter",
-    //       translateY: [0, -100],
-    //       opacity: [1, 0],
-    //       easing: "easeInExpo",
-    //       duration: 1200,
-    //       delay: (el, i) => 100 + 30 * i,
-    //     });
-    // },
-    // animateArray() {
-    //   // checker = document.querySelector()
-
-    //   for (var i = 0; i < this.texts.length; i++) {
-    //     console.log(`text-id-${i}`);
-    //     var textWrapper = document.querySelector(`#text-id-${i}`);
-    //     //  textWrapper.style.color = "red"
-    //     textWrapper.innerHTML = textWrapper.textContent.replace(
-    //       /\S/g,
-    //       "<span class='letter'>$&</span>"
-    //     );
-    //   }
-
-    //   var timeline = anime.timeline({ loop: true });
-
-    //   for (var j = 0; j < this.texts.length; j++) {
-    //     var k = j;
-    //     console.log("k: " + k);
-
-    //     var currentSelector = `#text-id-${k}`;
-    //     console.log("currentSelector: " + currentSelector);
-    //     timeline
-    //       .add({
-    //         loopBegin: function () {
-    //           //   var currentHeader = document.querySelector(`#text-id-${j}`);
-    //           //   currentHeader.style.display = "inline";
-    //           var begin = document.querySelector(`#text-id-${k}`);
-    //           // alert('beginning: ' + `#text-id-${k}`)
-    //           console.log("begin: " + begin);
-    //           console.log("got: " + `#text-id-${k}`);
-    //           begin.style.color = "blue";
-    //         },
-    //         targets: `#text-id-${j} .letter`,
-    //         translateY: [100, 0],
-    //         translateZ: 0,
-    //         opacity: [0, 1],
-    //         easing: "easeOutExpo",
-    //         duration: 1400,
-    //         delay: (el, i) => 300 + 30 * i,
-    //       })
-    //       .add({
-    //         targets: `#text-id-${j} .letter`,
-    //         translateY: [0, -100],
-    //         opacity: [1, 0],
-    //         easing: "easeInExpo",
-    //         duration: 1200,
-    //         delay: (el, i) => 100 + 30 * i,
-    //         complete: function () {
-    //           var change = document.querySelector(`#text-id-${k}`);
-    //           console.log("log: " + change);
-    //           console.log("completed: " + `#text-id-${k}`);
-    //           change.style.color = "red";
-    //           //   alert('complete');
-    //         },
-    //       });
-    //   }
-    // },
+    
     animateTwo() {
       for (var i = 0; i < this.texts.length; i++) {
-        console.log(`text-id-${i}`);
+        // console.log(`text-id-${i}`);
         var textWrapper = document.querySelector(`.text-id-${i}`);
         //  textWrapper.style.color = "red"
         textWrapper.innerHTML = textWrapper.textContent.replace(
