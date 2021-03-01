@@ -37,6 +37,7 @@
                 <li>
                   <a
                     href="https://www.qut.edu.au/research/study-with-us/student-topics/topics/augmented-sociality-enabling-a-participatory-experience-of-augmented-reality"
+                    target="_blank"
                   >
                     Developed as part of QUT's 'Augmented Sociality' Research</a
                   >

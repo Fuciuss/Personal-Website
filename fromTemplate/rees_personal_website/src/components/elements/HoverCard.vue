@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <h4 class="mt-0 mb-8">{{ displayText }}</h4>
+    <h3 class="mt-0 mb-8">{{ displayText }}</h3>
   </section>
 </template>
 
@@ -44,10 +44,6 @@ export default {
     info: {},
   },
   methods: {
-    testClick() {
-      alert("hello");
-    },
-    loadImages() {},
     DoNothing() {},
     StartAnimation() {
       let thisClass = this.info.name.replace(/\s+/g, "").toLowerCase() + "card";
@@ -65,9 +61,6 @@ export default {
 
       $("." + thisClass).hover(
         function () {
-          console.log("THISCLASS");
-          console.log(thisClass);
-
           animation.reset();
           animation.pause();
 

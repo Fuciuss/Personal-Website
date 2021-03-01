@@ -20,7 +20,7 @@
         <div>
           <p>
             Code for this web element is available on
-            <a href="https://codepen.io/kidcon/pen/GRNZVjJ"> CodePen </a>
+            <a href="https://codepen.io/kidcon/pen/GRNZVjJ" target="_blank"> CodePen </a>
           </p>
           <br>
         </div>
