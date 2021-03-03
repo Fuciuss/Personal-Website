@@ -19,7 +19,7 @@
         <c-section-header :data="sectionHeader" style="padding-bottom: 20px"/>
         <div>
           <p>
-            Code for this web element is available on
+            Code for this web element is available on my
             <a href="https://codepen.io/kidcon/pen/GRNZVjJ" target="_blank"> CodePen </a>
           </p>
           <br>
@@ -81,7 +81,7 @@ export default {
   data() {
     return {
       sectionHeader: {
-        title: "At a Glance",
+        title: "Skills At a Glance",
         paragraph: "",
       },
       webDevelopment: {
