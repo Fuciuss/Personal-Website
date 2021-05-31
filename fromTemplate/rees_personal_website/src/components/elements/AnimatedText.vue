@@ -39,7 +39,7 @@ export default {
         { id: "text-id-2", title: "Writing and playing music" },
         { id: "text-id-3", title: "At the local" },
         { id: "text-id-4", title: "Animating text.. apparently" },
-        { id: "text-id-5", title: "Losing touch with what the kids are into" },
+        { id: "text-id-5", title: "Demonstrating a demonstrated history of demonstrating demonstrations..." },
         { id: "text-id-6", title: "Daydreaming about cold brew" },
         { id: "text-id-7", title: "Maintaining ontological equipment" },
       ],
