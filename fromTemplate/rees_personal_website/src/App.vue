@@ -6,6 +6,9 @@
 
 <script>
 
+// console.log('hello')
+
+
 import { ScrollReveal } from '@/utils/ScrollReveal.js'
 
 

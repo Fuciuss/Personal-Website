@@ -31,7 +31,7 @@
                 class="mt-0 mb-32 ml-20 reveal-from-bottom"
                 data-reveal-delay="1000"
               >
-                I've just graduated... You'll find me:
+                You'll find me:
               </p>
               <!-- <p class="mt-0 ml-40 reveal-from-bottom" style="display: inline" data-reveal-delay="2000">
                 You can find me...

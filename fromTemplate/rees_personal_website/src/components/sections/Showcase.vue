@@ -30,7 +30,7 @@
               class="split-item-content center-content-mobile reveal-from-right justify-text-right text-xs"
               data-reveal-container=".split-item"
             >
-              <h3 class="mt-0 mb-12">BotgAR</h3>
+              <h3 class="mt-0 mb-12">BotgAR (2020)</h3>
               <ul class="remove-bullets">
                 <li>Botanical Gardens Augmented Reality</li>
                 <li>Android Application developed in Unity</li>
@@ -75,7 +75,7 @@
               class="split-item-content center-content-mobile reveal-from-left text-xs"
               data-reveal-container=".split-item"
             >
-              <h3 class="mt-0 mb-12">iGiveThanks</h3>
+              <h3 class="mt-0 mb-12">iGiveThanks (2020)</h3>
               <!-- <p class="m-0">
                                 Minimum Viable Product Web Application developed as part of the 2020 NextGen Startup Weekend
                             </p> -->
